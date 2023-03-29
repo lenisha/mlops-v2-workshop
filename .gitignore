@@ -3,3 +3,5 @@ aml_config
 .azureml/
 **/.ipynb_aml_checkpoints
 **.amltmp
+**.amlignore
+**.amltmp
