@@ -15,7 +15,7 @@ variables:
   value: $[replace(variables['Build.BuildNumber'], '.', '-')]
 
 - name: endpoint_name
-  value: taxi-online-$(namespace)-$(environment)-$(buildid)
+  value: taxi-online-$(environment)-$(buildid)-$(postfix)
 
 - name: deployment_name
   value: taxi-online-dp-$(buildid)
