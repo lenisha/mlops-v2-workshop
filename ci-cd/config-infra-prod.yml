@@ -17,8 +17,8 @@ variables:
 
 
   # Azure DevOps
-  ado_service_connection_rg: Azure-ARM-Prod
-  ado_service_connection_aml_ws: Azure-ARM-Prod
+  ado_service_connection_rg: nlp-azure
+  ado_service_connection_aml_ws: nlp-azure
 
   # Compute target for pipeline
   training_target: cpu-cluster
