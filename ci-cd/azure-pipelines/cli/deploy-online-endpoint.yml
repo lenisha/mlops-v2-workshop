@@ -3,8 +3,7 @@
 
 variables:
 - template: ../../config-infra-prod.yml
-- name: endpoint_name
-  value: taxi-online-$(namespace)$(postfix)$(environment)
+
 
 - name:  endpoint_file 
   value: ml-pipelines/cli/deploy/online/online-endpoint.yml  
@@ -14,6 +13,9 @@ variables:
 
 - name: buildid
   value: $[replace(variables['Build.BuildNumber'], '.', '-')]
+
+- name: endpoint_name
+  value: taxi-online-$(namespace)-$(environment)-$(buildid)
 
 - name: deployment_name
   value: taxi-online-dp-$(buildid)
